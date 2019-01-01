@@ -12,7 +12,7 @@
 
     <dubbo:reference id="helloService"
                      interface="com.niulx.dubbo.Ihello"
-                     protocol="dubbo"/>
+                     protocol="hessian"/>
 
-
+    <dubbo:reference id="test" interface="com.niulx.dubbo.Test" protocol="hessian"/>
 </beans>
