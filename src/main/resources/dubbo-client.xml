@@ -12,6 +12,8 @@
 
     <dubbo:reference id="helloService"
                      interface="com.niulx.dubbo.Ihello"
+                     mock="com.niulx.dubbo.TestMock"
+                     timeout="10"
                      protocol="dubbo"/>
 
     <dubbo:reference id="test" interface="com.niulx.dubbo.Test" protocol="hessian"/>
